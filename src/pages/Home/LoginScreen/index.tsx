@@ -28,9 +28,7 @@ export function LoginScreen() {
       </div>
 
       <div className={'containerLoginFormBtn'}>
-        <button className={'loginFormBtn'}>
-          <a href="/registration">Login</a>
-        </button>
+        <button className={'loginFormBtn'}>Login</button>
       </div>
       <div className={'textCenter'}>
         <p className={'text1'}>Não possui conta?</p>
