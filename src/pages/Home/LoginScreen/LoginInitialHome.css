@@ -1,0 +1,175 @@
+/* variáveis css */
+:root {
+    --white: #ffffff;
+
+    --gray-100: #e1e1e6;
+    --gray-300: #c4c4cc;
+    --gray-400: #8d9d99;
+    --gray-500: #6f6f70;
+    --gray-600: #323238;
+    --gray-700: #29292e;
+    --gray-800: #202024;
+    --gray-900: #121214;
+
+    --gold-300: #b68e09;
+    --gold-500: #a17c03;
+
+    --red-500: #f75a68;
+}
+
+.wrapInput {
+    width: 100%;
+    position: relative;
+    border-bottom: 2px solid var(--gray-100);
+    margin-bottom: 2.3rem;
+}
+
+.input {
+    font-size: 0.938rem;
+    color: var(--white);
+    line-height: 1.2;
+    border: none;
+    display: block;
+
+    width: 100%;
+    height: 2.8rem;
+
+    background-color: transparent;
+
+    padding: 0 0.3125rem;
+}
+
+.focusInput {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+
+    pointer-events: none;
+    color: var(--gray-400);
+}
+
+.focusInput::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -0.125rem;
+    left: 0;
+    width: 0;
+    height: 0.125rem;
+
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+
+    background: -webkit-linear-gradient(to left, var(--gray-400), var(--gold-500));
+    background: -o-linear-gradient(to left, var(--gray-400), var(--gold-500));
+    background: -moz-linear-gradient(to left, var(--gray-400), var(--gold-500));
+
+    background: linear-gradient(to left, var(--gray-400), var(--gold-300));
+}
+
+.focusInput::after {
+    font-size: 0.8rem;
+    color: var(--gray-400);
+    line-height: 1.2;
+
+    content: attr(data-placeholder);
+
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 1rem;
+    left: 0;
+
+    padding-left: 0.3125rem;
+
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+}
+
+.input:focus {
+    outline: 0;
+}
+
+.input:focus + .focusInput::after {
+    top: -0.938rem;
+}
+
+.input:focus + .focusInput::before {
+    width: 100%;
+}
+
+.hasVal + .focusInput::after {
+    top: -0.938rem;
+}
+
+.containerLoginFormBtn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 0.8125rem;
+}
+
+.loginFormBtn {
+    font-size: 0.9375rem;
+    border: none;
+    border-radius: 10px;
+    color: var(--white);
+
+    line-height: 1.2;
+
+    text-transform: uppercase;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 2rem;
+
+    background: -webkit-linear-gradient(to left, var(--gray-400), var(--gold-500));
+    background: -o-linear-gradient(to left, var(--gray-400), var(--gold-500));
+    background: -moz-linear-gradient(to left, var(--gray-400), var(--gold-500));
+
+    background: linear-gradient(to left, var(--gold-500), var(--gray-600), var(--gold-300));
+}
+
+.loginFormBtn a {
+    text-decoration: none;
+    color: var(--gray-100);
+}
+
+
+.loginFormBtn:hover {
+    cursor: pointer;
+    
+    background: linear-gradient(to left, var(--gold-500), var(--gray-400), var(--gold-500));
+}
+
+.textCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 1rem;
+}
+
+.text1 {
+    font-size: 0.875rem;
+    color: var(--gray-400);
+    line-height: 1.5;
+    padding-right: 0.31rem;
+    text-decoration: none;
+}
+
+.text2 {
+    font-size: 0.875rem;
+    color: var(--gold-500);
+    line-height: 1.5;
+    text-decoration: none;
+}
