@@ -9,7 +9,7 @@ export const AboutContainerMain = styled.main`
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-gap: 1rem;
-  padding: 4rem;
+  padding: 5rem;
 `
 
 export const BoxStyled = styled.div`

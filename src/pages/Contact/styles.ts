@@ -5,17 +5,31 @@ export const MainSearch = styled.main`
   height: 100%;
 `
 
-export const SearchDiv = styled.div`
+export const Form = styled.form`
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 5rem;
+  background: red;
 
-  padding: 15rem;
+  h2 {
+    padding: 1rem;
+    color: ${(props) => props.theme['gold-500']};
+  }
+`
+export const FormGroup = styled.div`
+  width: 100%;
+  border-radius: 8px;
+  padding: 2rem 10rem 2rem 10rem;
+  background: blue;
+`
+
+export const DivBackground = styled.div`
+  width: 100%;
+  border-radius: 8px;
 
   img {
-    width: 4rem;
-    height: 4rem;
-    margin: 1rem;
+    width: 100%;
+    height: 100%;
   }
 `
