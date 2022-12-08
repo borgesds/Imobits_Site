@@ -84,7 +84,7 @@ export const SubmitButton = styled.div`
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition: 0.75s;
+    transition: 0.4s;
 
     &:hover {
       background-color: ${(props) => props.theme['green-300']};
