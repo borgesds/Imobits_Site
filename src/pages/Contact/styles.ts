@@ -22,6 +22,7 @@ export const FormGroup = styled.div`
   grid-template-columns: 1fr 4fr;
   border-radius: 8px;
   background: ${(props) => props.theme['gray-500']};
+  border: 1px solid ${(props) => props.theme['gold-500']};
 `
 
 export const RedesSocial = styled.div`
@@ -33,10 +34,10 @@ export const RedesSocial = styled.div`
   transition: 0.75s;
 
   a {
-    color: ${(props) => props.theme['gray-100']};
+    color: ${(props) => props.theme['gold-300']};
 
     &:hover {
-      color: ${(props) => props.theme['gold-300']};
+      color: ${(props) => props.theme['gray-100']};
     }
   }
 `
