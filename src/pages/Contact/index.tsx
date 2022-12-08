@@ -94,12 +94,12 @@ export function Contact() {
                 </Col25>
 
                 <Col75>
-                <input 
-                  type="tel" 
-                  id="phone" 
-                  name="phone"
-                  placeholder="Your phone... Ex:31999999999"
-                />
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Your phone... Ex:31999999999"
+                  />
                 </Col75>
               </div>
             </div>
