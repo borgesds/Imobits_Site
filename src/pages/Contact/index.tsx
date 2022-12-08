@@ -1,48 +1,98 @@
-import { DivBackground, Form, FormGroup, MainSearch } from './styles'
-import map from '../../assets/img/map.png'
+import {
+  Col25,
+  Col75,
+  DivBackground,
+  Form,
+  FormGroup,
+  MainSearch,
+  RedesSocial,
+  SubmitButton,
+} from './styles'
+import {
+  FacebookLogo,
+  InstagramLogo,
+  LinkedinLogo,
+  TwitterLogo,
+} from 'phosphor-react'
 
 export function Contact() {
   return (
     <MainSearch>
       <Form>
         <FormGroup>
-          <DivBackground>
-            <img src={map} alt="Chaves na porta" />
+          <RedesSocial>
+            <div>
+              <a
+                href="https://pt-br.facebook.com/login/device-based/regular/login/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FacebookLogo size={32} />
+              </a>
+            </div>
 
+            <div>
+              <a
+                href="https://www.linkedin.com/login/pt"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <LinkedinLogo size={32} />
+              </a>
+            </div>
+
+            <div>
+              <a href="https://twitter.com" target="_blank" rel="noreferrer">
+                <TwitterLogo size={32} />
+              </a>
+            </div>
+
+            <div>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <InstagramLogo size={32} />
+              </a>
+            </div>
+          </RedesSocial>
+
+          <DivBackground>
             <h2>Entre em contato</h2>
             <div>
-              <div>
+              <Col25>
                 <label htmlFor="name">Nome</label>
-              </div>
+              </Col25>
 
-              <div>
+              <Col75>
                 <input id="fame" name="yourname" placeholder="Your name..." />
-              </div>
+              </Col75>
             </div>
 
             <div>
               <div>
-                <div>
+                <Col25>
                   <label htmlFor="">E-mail</label>
-                </div>
+                </Col25>
 
-                <div>
+                <Col75>
                   <input
                     type="email"
                     id="email"
                     name="email"
                     placeholder="Your e-mail..."
                   />
-                </div>
+                </Col75>
               </div>
             </div>
 
             <div>
-              <div>
+              <Col25>
                 <label htmlFor="subject">Assunto</label>
-              </div>
+              </Col25>
 
-              <div>
+              <Col75>
                 <textarea
                   name="subject"
                   id="subject"
@@ -50,12 +100,12 @@ export function Contact() {
                   rows="10"
                   placeholder="Write something..."
                 ></textarea>
-              </div>
+              </Col75>
             </div>
 
-            <div>
-              <input type="submit" value="submit" />
-            </div>
+            <SubmitButton>
+              <input type="submit" value="Enviar" />
+            </SubmitButton>
           </DivBackground>
         </FormGroup>
       </Form>
