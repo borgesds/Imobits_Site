@@ -88,6 +88,23 @@ export function Contact() {
             </div>
 
             <div>
+              <div>
+                <Col25>
+                  <label htmlFor="">Telefone</label>
+                </Col25>
+
+                <Col75>
+                <input 
+                  type="tel" 
+                  id="phone" 
+                  name="phone"
+                  placeholder="Your phone... Ex:31999999999"
+                />
+                </Col75>
+              </div>
+            </div>
+
+            <div>
               <Col25>
                 <label htmlFor="subject">Assunto</label>
               </Col25>
