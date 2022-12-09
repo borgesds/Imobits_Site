@@ -4,7 +4,7 @@ import { About } from './pages/About'
 import { Contact } from './pages/Contact'
 import { Home } from './pages/Home/components'
 
-import { Registration } from './pages/Registration'
+import { Registration } from './pages/Registration/components'
 import { SearchProperties } from './pages/SearchProperties'
 import { Services } from './pages/Services'
 
