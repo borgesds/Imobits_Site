@@ -25,6 +25,7 @@ export const NavLinks = styled.nav`
     justify-content: center;
     padding: 0.55rem;
     background-color: ${(props) => props.theme['gray-600']};
+    font-weight: bold;
   }
 
   li {
@@ -40,6 +41,12 @@ export const NavLinks = styled.nav`
     &:hover {
       background-color: ${(props) => props.theme['gold-500']};
     }
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
   }
 
   /* sub menu */
@@ -49,6 +56,7 @@ export const NavLinks = styled.nav`
     width: 13rem;
     left: 0;
     font-size: small;
+    font-weight: lighter;
     margin-top: 0.55rem;
   }
 

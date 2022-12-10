@@ -3,8 +3,6 @@ import {
   UsersThree,
   ChartPieSlice,
   CurrencyEth,
-  FolderStar,
-  ChatsCircle,
 } from 'phosphor-react'
 
 import {
