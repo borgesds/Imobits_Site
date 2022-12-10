@@ -17,6 +17,7 @@ export const NavLinks = styled.nav`
   width: 34.375rem;
   list-style-type: none;
   border: 1px solid ${(props) => props.theme['gold-500']};
+  border-radius: 8px;
   margin-top: 6rem;
 
   ul {
@@ -25,6 +26,7 @@ export const NavLinks = styled.nav`
     justify-content: center;
     padding: 0.55rem;
     background-color: ${(props) => props.theme['gray-600']};
+    border-radius: 8px;
     font-weight: bold;
   }
 
@@ -67,4 +69,8 @@ export const NavLinks = styled.nav`
   ul ul li a {
     display: block;
   }
+`
+
+export const Exit = styled.div`
+  color: ${(props) => props.theme['red-500']};
 `

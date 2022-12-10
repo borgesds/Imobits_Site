@@ -1,4 +1,4 @@
-import { HeaderIMG, NavLinks } from './styles'
+import { Exit, HeaderIMG, NavLinks } from './styles'
 import {
   AddressBook,
   ArrowCircleLeft,
@@ -161,11 +161,11 @@ export function HeaderRegistration() {
               </li>
 
               <li>
-                <a href="#">
-                  <div>
+                <a href="/">
+                  <Exit>
                     <SignOut size={15} />
                     Sair
-                  </div>
+                  </Exit>
                 </a>
               </li>
             </ul>

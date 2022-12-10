@@ -1,28 +1,28 @@
-import { PencilLine } from 'phosphor-react'
+import { HouseLine } from 'phosphor-react'
+import { Cover, Profile, SidebarRegistration } from './styles'
+import imob from '../../../assets/img/imob.jpg'
 
-export function SidebarRegistration() {
+export function Sidebar() {
   return (
-    <aside>
-      <h1>Hello word</h1>
-      {/* <img
-        src="https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=40"
-        alt=""
-      />
-
-      <div>
-        <img src="https://github.com/borgesds.png" alt="" />
+    <SidebarRegistration>
+      <Cover>
+        <p>Seja Bem - Vindo</p>
+      </Cover>
+      <Profile>
+        <img src={imob} alt="" />
 
         <strong>André Fonseca Borges</strong>
         <span>Developer</span>
-      </div>
+      </Profile>
 
       <footer>
         <a href="#">
-          
-          <PencilLine size={20} />
-          Editar seu perfil
+          Home page
+          <div>
+            <HouseLine size={25} />
+          </div>
         </a>
-      </footer> */}
-    </aside>
+      </footer>
+    </SidebarRegistration>
   )
 }
