@@ -3,7 +3,7 @@ import { Footers } from '../../components/Footers'
 import { Headers } from '../../components/Headers'
 import { LayoutContainer } from './styled'
 
-export function DefaultLayout() {
+export function DefaultHome() {
   return (
     <LayoutContainer>
       <Headers />

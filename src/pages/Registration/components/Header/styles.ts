@@ -27,6 +27,7 @@ export const NavLinks = styled.nav`
     padding: 0.55rem;
     background-color: ${(props) => props.theme['gray-600']};
     border-radius: 8px;
+    font-size: 0.9rem;
     font-weight: bold;
   }
 
@@ -42,6 +43,7 @@ export const NavLinks = styled.nav`
 
     &:hover {
       background-color: ${(props) => props.theme['gold-500']};
+      border-radius: 5px;
     }
 
     div {

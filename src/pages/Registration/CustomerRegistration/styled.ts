@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const RegistrationMain = styled.main`
+export const CustomerRegistrationMain = styled.main`
   width: 100%;
   background: ${(props) => props.theme['gray-800']};
   border-radius: 8px;

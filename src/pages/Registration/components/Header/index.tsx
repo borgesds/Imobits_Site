@@ -19,10 +19,14 @@ export function HeaderRegistration() {
       <NavLinks>
         <ul>
           <li>
+            <a href="/registration">Imobits</a>
+          </li>
+
+          <li>
             <a href="#">Cliente</a>
             <ul>
               <li>
-                <a href="#">
+                <a href="/registration/customerregistration">
                   <div>
                     <UserList size={15} />
                     Cadastrar Cliente
