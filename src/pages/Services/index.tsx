@@ -84,6 +84,40 @@ export function Services() {
             </p>
           </Comment>
         </BoxStyled>
+        <BoxStyled>
+          <BoxHeader>
+            <Icon>
+              <CurrencyEth size={32} />
+            </Icon>
+            <p>Marketing</p>
+          </BoxHeader>
+
+          <Comment>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum,
+              ullam beatae inventore necessitatibus similique consectetur
+              debitis voluptatem commodi aliquid eos a ratione repellendus nisi
+              consequuntur molestias dolor quas veritatis deserunt.
+            </p>
+          </Comment>
+        </BoxStyled>
+        <BoxStyled>
+          <BoxHeader>
+            <Icon>
+              <CurrencyEth size={32} />
+            </Icon>
+            <p>Marketing</p>
+          </BoxHeader>
+
+          <Comment>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum,
+              ullam beatae inventore necessitatibus similique consectetur
+              debitis voluptatem commodi aliquid eos a ratione repellendus nisi
+              consequuntur molestias dolor quas veritatis deserunt.
+            </p>
+          </Comment>
+        </BoxStyled>
       </AboutContainerMain>
     </Article>
   )
